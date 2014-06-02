@@ -19,7 +19,7 @@ Myapp::App.controllers :home do
   #   'Hello world!'
   # end
   
-  get :index do
+  get :index, map: '/' do
     render 'index'
   end
 

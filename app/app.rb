@@ -50,7 +50,6 @@ module Myapp
     #   end
     #
     configure :production do
-      #require 'newrelic_rpm'
       enable :logging
       GC::Profiler.enable
     end

@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-
+ruby '2.1.2'
 # Distribute your app as a gem
 # gemspec
 
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'puma'
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)

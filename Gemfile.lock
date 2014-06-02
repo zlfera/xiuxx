@@ -14,6 +14,7 @@ GEM
     json (1.8.1)
     minitest (5.3.4)
     moneta (0.7.20)
+    newrelic_rpm (3.8.1.221)
     padrino-cache (0.12.2)
       moneta (~> 0.7.0)
       padrino-core (= 0.12.2)
@@ -60,6 +61,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  newrelic_rpm
   padrino-cache (>= 0.12.2)
   padrino-core (>= 0.12.2)
   padrino-gen (>= 0.12.2)

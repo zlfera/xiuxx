@@ -5,6 +5,9 @@ ruby '2.1.2'
 
 # Server requirements
 gem 'puma'
+group :production do
+  gem 'newrelic_rpm'
+end
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)

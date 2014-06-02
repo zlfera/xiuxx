@@ -49,6 +49,11 @@ module Myapp
     #     disable :asset_stamp # no asset timestamping for dev
     #   end
     #
+    configure :production do
+      #require 'newrelic_rpm'
+      enable :logging
+      GC::Profiler.enable
+    end
 
     ##
     # You can manage errors like:

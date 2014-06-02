@@ -20,7 +20,7 @@ Myapp::App.controllers :home do
   # end
   
   get :index do
-
+    render 'index'
   end
 
 end

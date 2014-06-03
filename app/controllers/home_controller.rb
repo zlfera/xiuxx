@@ -1,4 +1,4 @@
-Myapp::App.controllers :home do
+Myapp::App.controllers :home_controller do
   
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'

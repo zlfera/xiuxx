@@ -24,4 +24,8 @@ Myapp::App.controllers :home do
     render 'index'
   end
 
+  get :indexs, map: '/indexs' do
+    etag
+    render 'indexs'
+  end
 end

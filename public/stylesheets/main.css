@@ -6,7 +6,8 @@ body {
   border:1px solid green;
 }
 nav {
-    text-align:center;
+  display:flex;
+  /*text-align:center;*/
 }
 a {
   margin-right:6px;

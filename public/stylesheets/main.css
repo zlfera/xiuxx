@@ -6,9 +6,7 @@ body {
   border:1px solid green;
 }
 nav {
-  display:-moz-flex;
-  flex-direction: row;
-  /*text-align:center;*/
+  text-align:center;
 }
 a {
   margin-right:6px;

@@ -2,7 +2,7 @@ body {
   -moz-box-sizing:border-box;
 }
 body {
-  margin:1px solid green;
+  margin:100px solid green;
 }
 nav {
   width:960;

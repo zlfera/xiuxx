@@ -2,12 +2,11 @@
   box-sizing:border-box;
 }
 body {
-  width:360;
-  margin:auto;
   border:1px solid green;
 }
 nav {
-  
+  width:960;
+  margin:auto;
 }
 a {
   margin-right:30px;

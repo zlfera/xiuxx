@@ -8,7 +8,8 @@ nav {
   display:flex;
 }
 a {
+  align-items:center;
   justify-content:center;
   margin-right:10px;
-  width:60px;
+  width:80px;
 }

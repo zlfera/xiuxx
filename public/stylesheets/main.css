@@ -10,7 +10,7 @@ nav {
   justify-content:center;
 }
 a {
-  
+  text-decoration:none;
   margin-right:10px;
   width:100px;
 }

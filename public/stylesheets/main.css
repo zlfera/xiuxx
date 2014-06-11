@@ -5,10 +5,10 @@ body {
   border:1px solid green;
 }
 nav {
-  width:960;
-  margin:auto;
-  text-align:center;
+  display:flex;
 }
 a {
-  margin-right:30px;
+  justify-content:center;
+  margin-right:10px;
+  width:50px;
 }

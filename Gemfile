@@ -9,7 +9,9 @@ group :production do
   gem 'newrelic_rpm'
 end
 # gem 'trinidad', :platform => 'jruby'
-
+group :development do
+  gem 'padrino-gen', '>=0.12.2'
+end
 # Optional JSON codec (faster performance)
 # gem 'oj'
 
@@ -28,6 +30,6 @@ gem 'slim'
 # gem 'padrino', :github => 'padrino/padrino-framework'
 
 # Or Individual Gems
-%w(core support gen helpers cache).each do |g|
+%w(core support helpers cache).each do |g|
   gem 'padrino-' + g, '>=0.12.2'
 end

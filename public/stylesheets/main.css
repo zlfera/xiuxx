@@ -4,13 +4,13 @@
 body {
   border:1px solid green;
 }
-nav,p {
+nav,p,form {
   display:flex;
   align-items:center;
   justify-content:center;
   margin-bottom:10px;
 }
-a {
+nav a {
   text-decoration:none;
   margin-right:10px;
   width:100px;

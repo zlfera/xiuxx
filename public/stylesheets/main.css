@@ -4,7 +4,7 @@
 body {
   border:1px solid green;
 }
-nav,p,form {
+nav,footer p,form {
   display:flex;
   align-items:center;
   justify-content:center;

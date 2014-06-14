@@ -20,7 +20,7 @@ Myapp::App.controllers :home do
   # end
   
   get :index, map: '/' do
-    etag 'hello'
+    #etag 'hello'
     render 'index'
   end
 

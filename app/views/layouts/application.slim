@@ -6,8 +6,13 @@ html lang="en"
     title zeng
     link rel="stylesheet" href="stylesheets/main.css"
     javascript:
-      var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-      document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F12482a10445f430e68bd5ec12b2a799b' type='text/javascript'%3E%3C/script%3E"));
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?12482a10445f430e68bd5ec12b2a799b";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
   body
     == yield
     footer

@@ -1,8 +1,8 @@
 * {
   box-sizing:border-box;
+  background-color:#CCE8CF;
 }
 body {
-  background-color:#CCE8CF;
   border:1px solid green;
 }
 nav,footer p,form {

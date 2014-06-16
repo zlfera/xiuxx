@@ -25,7 +25,7 @@ Myapp::App.controllers :home do
   end
 
   get :indexs, map: '/indexs' do
-    #etag 'zeng'
+    etag 'zeng'
     render 'indexs'
   end
 end

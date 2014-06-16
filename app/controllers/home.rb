@@ -20,11 +20,12 @@ Myapp::App.controllers :home do
   # end
   
   get :index, map: '/' do
-    #etag 'hello'
+    etag 'hello'
     render 'index'
   end
 
   get :indexs, map: '/indexs' do
+    etag 'zeng'
     render 'indexs'
   end
 end

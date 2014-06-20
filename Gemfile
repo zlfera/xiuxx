@@ -5,12 +5,15 @@ ruby '2.1.2'
 
 # Server requirements
 gem 'puma'
+gem 'activerecord'
 group :production do
   gem 'newrelic_rpm'
+  gem 'pg'
 end
 # gem 'trinidad', :platform => 'jruby'
 group :development do
   gem 'padrino-gen', '>=0.12.2'
+  gem 'sqlite3'
 end
 # Optional JSON codec (faster performance)
 # gem 'oj'

@@ -23,7 +23,7 @@ GEM
     json (1.8.1)
     minitest (5.3.5)
     moneta (0.7.20)
-    newrelic_rpm (3.8.1.221)
+    newrelic_rpm (3.9.0.229)
     padrino-cache (0.12.2)
       moneta (~> 0.7.0)
       padrino-core (= 0.12.2)

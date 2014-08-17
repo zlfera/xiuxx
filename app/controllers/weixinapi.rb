@@ -30,7 +30,6 @@ Myapp::App.controllers :weixinapi do
 
   get :text, '/weixin' do
     params[:echostr]
-    'hello'
   end
 
   post :text, '/weixin' do

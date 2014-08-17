@@ -45,7 +45,7 @@ Myapp::App.controllers :weixinapi do
     @message_id = root.css("MsgId").text.to_i
     ###
     # @pic_url = root.css('PicUrl').children.text
-    render 'weixin/text' #("#{@message_type.to_s}")
+    render 'weixinapi/text' #("#{@message_type.to_s}")
 
   end
 

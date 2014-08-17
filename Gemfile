@@ -8,6 +8,7 @@ gem 'activerecord'
 group :production do
   gem 'newrelic_rpm'
   gem 'pg'
+  gem 'nokogiri'
 end
 # gem 'trinidad', :platform => 'jruby'
 group :development do

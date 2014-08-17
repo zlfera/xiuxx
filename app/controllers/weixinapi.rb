@@ -28,11 +28,11 @@ Myapp::App.controllers :weixinapi do
   end
   ################################
 
-  get :text, '/weixin' do
+  get :text, '/wweixin' do
     params[:echostr]
   end
 
-  post :text, '/weixin' do
+  get :text, '/weixin' do
     content_type :xml, charset: 'utf-8'
 
     root = Nokogiri::XML(request.body.read).root

@@ -19,7 +19,7 @@ Myapp::App.controllers :weixinapi do
   #   'Hello world!'
   # end
   
-  TOKEN = 'igougougoua'
+  TOKEN = 'igougougou'
   before :text do
     require 'digest/sha1'
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
@@ -45,7 +45,7 @@ Myapp::App.controllers :weixinapi do
     @message_id = root.css("MsgId").text.to_i
     ###
     # @pic_url = root.css('PicUrl').children.text
-    render '/weixin/text' #("#{@message_type.to_s}")
+    render 'weixin/text' #("#{@message_type.to_s}")
 
   end
 

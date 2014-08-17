@@ -33,7 +33,7 @@ Myapp::App.controllers :weixinapi do
   end
 
   get :text, '/weixin' do
-    content_type :xml, charset: 'utf-8'
+    #content_type :xml, charset: 'utf-8'
 
     root = Nokogiri::XML(request.body.read).root
     @message_type = root.css('MsgType').children.text

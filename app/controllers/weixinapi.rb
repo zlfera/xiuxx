@@ -19,8 +19,8 @@ Myapp::App.controllers :weixinapi do
   #   'Hello world!'
   # end
   
-  TOKEN = 'igougougou'
-  before do
+  TOKEN = 'igougougoua'
+  before :text do
     require 'digest/sha1'
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
     codes = [TOKEN, timestamp, nonce].sort.join

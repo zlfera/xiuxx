@@ -28,9 +28,9 @@ Myapp::App.controllers :weixinapi do
   end
   ################################
 
-  post :text, '/weixin' do
-    params[:echostr]
-  end
+  #post :text, '/weixin' do
+   # params[:echostr]
+  #end
 
   get :indexs, '/weixin' do
     #content_type :xml, charset: 'utf-8'

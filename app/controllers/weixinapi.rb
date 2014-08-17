@@ -1,5 +1,5 @@
 Myapp::App.controllers :weixinapi do
-  
+  disable :layout
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -45,7 +45,7 @@ Myapp::App.controllers :weixinapi do
     @message_id = root.css("MsgId").text.to_i
     ###
     # @pic_url = root.css('PicUrl').children.text
-    render 'text'#"#{@message_type.to_s}"
+    render(:nokogiri, "#{@message_type.to_s}")
 
   end
 

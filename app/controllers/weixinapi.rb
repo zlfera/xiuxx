@@ -1,5 +1,5 @@
 Myapp::App.controllers :weixinapi do
-  disable :layout
+  # disable :layout
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -20,7 +20,7 @@ Myapp::App.controllers :weixinapi do
   # end
   
   TOKEN = 'igougougou'
-  before :text do
+  before do
     require 'digest/sha1'
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
     codes = [TOKEN, timestamp, nonce].sort.join
@@ -28,11 +28,11 @@ Myapp::App.controllers :weixinapi do
   end
   ################################
 
-  post :text, '/weixin' do
+  post '/weixin' do
     params[:echostr]
   end
 
-  get :text, '/weixin' do
+  get '/weixin' do
     #content_type :xml, charset: 'utf-8'
 
     root = Nokogiri::XML(request.body.read).root

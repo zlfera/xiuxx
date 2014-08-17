@@ -20,7 +20,7 @@ Myapp::App.controllers :weixinapi do
   # end
   
   TOKEN = 'igougougou'
-  before :text do
+  before do
     require 'digest/sha1'
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
     codes = [TOKEN, timestamp, nonce].sort.join
@@ -45,7 +45,7 @@ Myapp::App.controllers :weixinapi do
     @message_id = root.css("MsgId").text.to_i
     ###
     # @pic_url = root.css('PicUrl').children.text
-    render("#{@message_type.to_s}")
+    render 'text.nokogiri' #("#{@message_type.to_s}")
 
   end
 

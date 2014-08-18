@@ -26,7 +26,6 @@ Myapp::App.controllers :home do
 
   get :indexs, '/indexs' do
     #etag 'zeng'
-    disable :layout
     render 'indexs'
   end
 end

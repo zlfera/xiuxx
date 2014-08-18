@@ -1,5 +1,5 @@
 Myapp::App.controllers :home do
-  
+  disable :layout
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'

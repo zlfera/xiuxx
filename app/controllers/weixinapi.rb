@@ -1,5 +1,5 @@
 Myapp::App.controllers :weixinapi do
-  # disable :layout
+  disable :layout
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -20,7 +20,7 @@ Myapp::App.controllers :weixinapi do
   # end
   
   TOKEN = 'igougougou'
-  before do
+  before :text do
     require 'digest/sha1'
     timestamp, nonce = params[:timestamp].to_s, params[:nonce].to_s
     codes = [TOKEN, timestamp, nonce].sort.join
@@ -32,7 +32,7 @@ Myapp::App.controllers :weixinapi do
    # params[:echostr]
   #end
 
-  get :indexs, '/weixin' do
+  get :text, '/weixin' do
     #content_type :xml, charset: 'utf-8'
 
     root = Nokogiri::XML(request.body.read).root
@@ -45,7 +45,7 @@ Myapp::App.controllers :weixinapi do
     @message_id = root.css("MsgId").text.to_i
     ###
     # @pic_url = root.css('PicUrl').children.text
-    render 'indexs' #("#{@message_type.to_s}")
+    render("#{@message_type.to_s}")
 
   end
 

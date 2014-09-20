@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.0-preview1'
+ruby '2.1.3'
 # Distribute your app as a gem
 # gemspec
 # Server requirements

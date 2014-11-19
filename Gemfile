@@ -4,7 +4,7 @@ ruby '2.1.4'
 # gemspec
 # Server requirements
 gem 'puma'
-gem 'activerecord'
+# gem 'activerecord'
 group :production do
   gem 'newrelic_rpm'
   gem 'pg'

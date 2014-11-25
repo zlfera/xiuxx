@@ -1,5 +1,5 @@
 Myapp::App.controllers :home, '/home' do
-  expires 86400
+  #expires 86400
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -24,7 +24,7 @@ Myapp::App.controllers :home, '/home' do
     render 'index'
   end
 
-  get :indexs, '/indexs' do
+  get :indexs, '/home/indexs' do
     # etag 'zeng'
     # expires 86400
     render 'indexs'

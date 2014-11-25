@@ -24,8 +24,9 @@ Myapp::App.controllers :home do
     render 'index'
   end
 
-  get :indexs, '/indexs' do
+  get :indexs, '/indexs',cache: true do
     #etag 'zeng'
+    expires 86400
     render 'indexs'
   end
 end

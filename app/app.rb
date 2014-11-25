@@ -17,7 +17,7 @@ module Myapp
     # set :cache, Padrino::Cache.new(:Memcached) # Uses default server at localhost
     # set :cache, Padrino::Cache.new(:Memcached, '127.0.0.1:11211', :exception_retry_limit => 1)
     # set :cache, Padrino::Cache.new(:Memcached, :backend => memcached_or_dalli_instance)
-    # set :cache, Padrino::Cache.new(:Redis) # Uses default server at localhost
+    set :cache, Padrino::Cache.new(:Redis, host: "pub-redis-19344.dal-05.1.sl.garantiadata.com", port: 19344, password: '123456z', db: 0)
     # set :cache, Padrino::Cache.new(:Redis, :host => '127.0.0.1', :port => 6379, :db => 0)
     # set :cache, Padrino::Cache.new(:Redis, :backend => redis_instance)
     # set :cache, Padrino::Cache.new(:Mongo) # Uses default server at localhost

@@ -4,6 +4,7 @@ ruby '2.1.5'
 # gemspec
 # Server requirements
 gem 'puma'
+gem 'redis'
 # gem 'activerecord'
 group :production do
   gem 'newrelic_rpm'

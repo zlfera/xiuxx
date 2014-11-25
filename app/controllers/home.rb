@@ -1,4 +1,4 @@
-Myapp::App.controllers :home, '/home' do
+Myapp::App.controllers '/home' do
   #expires 86400
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'

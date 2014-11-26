@@ -1,5 +1,5 @@
-Myapp::App.controllers :home, cache: true do
-  expires 86400
+Myapp::App.controllers :home do
+  #expires 86400
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -19,14 +19,15 @@ Myapp::App.controllers :home, cache: true do
   #   'Hello world!'
   # end
   
-  get :index, '/' do
+  get :index, '/', cache: true do
+    expires 36000
     etag 'hello'
     render 'index'
   end
 
-  get :indexs, '/indexs' do
+  get :indexs, '/indexs', cache: true do
     # etag 'zeng'
-    # expires 86400
+    expires 36000
     render 'indexs'
   end
 end

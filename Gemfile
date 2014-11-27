@@ -3,7 +3,7 @@ ruby '2.1.5'
 # Distribute your app as a gem
 # gemspec
 # Server requirements
-gem 'puma'
+gem 'passenger', '~> 5.0.0.beta1'
 gem 'redis'
 # gem 'activerecord'
 group :production do

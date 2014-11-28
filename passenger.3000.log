@@ -19,3 +19,45 @@
 [ 2014-11-28 00:09:09.8621 3630/7f8459170700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
 [ 2014-11-28 00:09:09.8623 3630/7f845a790740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished
 [ 2014-11-28 00:09:09.8723 3625/7fbb66d03740 agents/HelperAgent/Main.cpp:866 ]: PassengerAgent server shutdown finished
+[ 2014-11-28 03:41:20.4527 482/7fd29fdaf740 agents/Watchdog/Main.cpp:1220 ]: Starting PassengerAgent watchdog...
+[ 2014-11-28 03:41:20.4661 485/7f687fe92740 agents/HelperAgent/Main.cpp:881 ]: Starting PassengerAgent server...
+[ 2014-11-28 03:41:20.4664 485/7f687fe92740 agents/HelperAgent/Main.cpp:254 ]: PassengerAgent server running in single-application mode.
+[ 2014-11-28 03:41:20.4664 485/7f687fe92740 agents/HelperAgent/Main.cpp:255 ]: Serving app     : /home/action/myapp
+[ 2014-11-28 03:41:20.4664 485/7f687fe92740 agents/HelperAgent/Main.cpp:256 ]: App type        : rack
+[ 2014-11-28 03:41:20.4664 485/7f687fe92740 agents/HelperAgent/Main.cpp:257 ]: App startup file: config.ru
+[ 2014-11-28 03:41:20.4694 485/7f687fe92740 agents/HelperAgent/Main.cpp:635 ]: PassengerAgent server online, PID 485
+[ 2014-11-28 03:41:20.4793 490/7f3f433e6740 agents/LoggingAgent/Main.cpp:431 ]: Starting PassengerAgent logger...
+[ 2014-11-28 03:41:20.4800 490/7f3f433e6740 agents/LoggingAgent/Main.cpp:312 ]: PassengerAgent logger online, PID 490
+
+[ 2014-11-28 03:47:53.2418 485/7f687e071700 agents/HelperAgent/Main.cpp:447 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 03:47:53.2418 485/7f687fe92740 agents/HelperAgent/Main.cpp:804 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 03:47:53.2419 485/7f687d870700 ServerKit/Server.h:453 ]: [ServerThr.2] Shutdown finished
+[ 2014-11-28 03:47:53.2421 485/7f687d06f700 ServerKit/Server.h:453 ]: [AdminServer] Shutdown finished
+[ 2014-11-28 03:47:53.2421 485/7f687e071700 ServerKit/Server.h:453 ]: [ServerThr.1] Shutdown finished
+
+[ 2014-11-28 03:47:53.2426 490/7f3f41dc6700 agents/LoggingAgent/Main.cpp:338 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 03:47:53.2427 490/7f3f433e6740 agents/LoggingAgent/Main.cpp:400 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 03:47:53.2428 490/7f3f41dc6700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
+[ 2014-11-28 03:47:53.2429 490/7f3f433e6740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished
+[ 2014-11-28 03:47:53.2529 485/7f687fe92740 agents/HelperAgent/Main.cpp:866 ]: PassengerAgent server shutdown finished
+[ 2014-11-28 04:51:46.2411 1228/7f6a1ef3d740 agents/Watchdog/Main.cpp:1220 ]: Starting PassengerAgent watchdog...
+[ 2014-11-28 04:51:46.2799 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:881 ]: Starting PassengerAgent server...
+[ 2014-11-28 04:51:46.2802 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:254 ]: PassengerAgent server running in single-application mode.
+[ 2014-11-28 04:51:46.2802 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:255 ]: Serving app     : /home/action/myapp
+[ 2014-11-28 04:51:46.2802 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:256 ]: App type        : rack
+[ 2014-11-28 04:51:46.2802 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:257 ]: App startup file: config.ru
+[ 2014-11-28 04:51:46.2911 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:635 ]: PassengerAgent server online, PID 1231
+[ 2014-11-28 04:51:46.3340 1236/7f1d60b38740 agents/LoggingAgent/Main.cpp:431 ]: Starting PassengerAgent logger...
+[ 2014-11-28 04:51:46.3405 1236/7f1d60b38740 agents/LoggingAgent/Main.cpp:312 ]: PassengerAgent logger online, PID 1236
+
+[ 2014-11-28 04:52:21.3895 1231/7f619cb84700 agents/HelperAgent/Main.cpp:447 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 04:52:21.3896 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:804 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 04:52:21.3897 1231/7f6197fff700 ServerKit/Server.h:453 ]: [ServerThr.2] Shutdown finished
+[ 2014-11-28 04:52:21.3899 1231/7f61977fe700 ServerKit/Server.h:453 ]: [AdminServer] Shutdown finished
+[ 2014-11-28 04:52:21.3899 1231/7f619cb84700 ServerKit/Server.h:453 ]: [ServerThr.1] Shutdown finished
+[ 2014-11-28 04:52:21.3909 1231/7f619e9a5740 agents/HelperAgent/Main.cpp:866 ]: PassengerAgent server shutdown finished
+
+[ 2014-11-28 04:52:21.3918 1236/7f1d5f518700 agents/LoggingAgent/Main.cpp:338 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 04:52:21.3919 1236/7f1d60b38740 agents/LoggingAgent/Main.cpp:400 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 04:52:21.3919 1236/7f1d5f518700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
+[ 2014-11-28 04:52:21.3921 1236/7f1d60b38740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished

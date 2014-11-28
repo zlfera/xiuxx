@@ -21,9 +21,9 @@ Myapp::App.controllers :home do
   
   get :index, '/' do
     "Hello, Phusion Passenger #{PhusionPassenger::VERSION_STRING}!"
-    #expires 36000
-    #etag 'hello'
-    #render 'index'
+    expires 36000
+    etag 'hello'
+    render 'index'
   end
 
   get :indexs, '/indexs', cache: true do

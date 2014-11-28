@@ -27,8 +27,8 @@ Myapp::App.controllers :home do
   end
 
   get :indexs, '/indexs', cache: true do
-    # etag 'zeng'
-    expires 36000
+    etag 'zeng'
+    expires 36000, :must_revalidate
     render 'indexs'
   end
 end

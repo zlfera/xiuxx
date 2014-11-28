@@ -22,12 +22,12 @@ Myapp::App.controllers :home do
   get :index, '/' do
     "Hello, Phusion Passenger #{PhusionPassenger::VERSION_STRING}!"
     expires 36000
-    etag 'hello'
+    etag Time.new.day
     render 'index'
   end
 
   get :indexs, '/indexs', cache: true do
-    etag 'zeng'
+    etag Time.new.day
     expires 36000, :must_revalidate
     render 'indexs'
   end

@@ -82,3 +82,99 @@
 [ 2014-11-28 14:26:42.2302 3257/7fcb3e120740 agents/LoggingAgent/Main.cpp:400 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
 [ 2014-11-28 14:26:42.2302 3257/7fcb3cb00700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
 [ 2014-11-28 14:26:42.2304 3257/7fcb3e120740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished
+[ 2014-11-28 23:05:53.5352 600/7f2a49e94740 agents/Watchdog/Main.cpp:1220 ]: Starting PassengerAgent watchdog...
+[ 2014-11-28 23:05:53.5462 603/7effe6768740 agents/HelperAgent/Main.cpp:881 ]: Starting PassengerAgent server...
+[ 2014-11-28 23:05:53.5464 603/7effe6768740 agents/HelperAgent/Main.cpp:254 ]: PassengerAgent server running in single-application mode.
+[ 2014-11-28 23:05:53.5464 603/7effe6768740 agents/HelperAgent/Main.cpp:255 ]: Serving app     : /home/action/myapp
+[ 2014-11-28 23:05:53.5464 603/7effe6768740 agents/HelperAgent/Main.cpp:256 ]: App type        : rack
+[ 2014-11-28 23:05:53.5465 603/7effe6768740 agents/HelperAgent/Main.cpp:257 ]: App startup file: config.ru
+[ 2014-11-28 23:05:53.5492 603/7effe6768740 agents/HelperAgent/Main.cpp:635 ]: PassengerAgent server online, PID 603
+[ 2014-11-28 23:05:53.5583 608/7f8be8f65740 agents/LoggingAgent/Main.cpp:431 ]: Starting PassengerAgent logger...
+[ 2014-11-28 23:05:53.5590 608/7f8be8f65740 agents/LoggingAgent/Main.cpp:312 ]: PassengerAgent logger online, PID 608
+App 631 stdout: 
+App 631 stderr: /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/system_metrics_command.rb:32:in `exec'
+App 631 stderr: : 
+App 631 stderr: No such file or directory - /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/buildout/support-binaries/PassengerAgent
+App 631 stderr:  (
+App 631 stderr: Errno::ENOENT
+App 631 stderr: )
+App 631 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/system_metrics_command.rb:32:in `run'
+App 631 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/main.rb:75:in `run!'
+App 631 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/bin/passenger-config:37:in `<main>'
+App 647 stdout: 
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mTEMPLATE[0m ([1;33m0.0005s[0m) /home/index
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mTEMPLATE[0m ([1;33m0.0005s[0m) /layouts/application
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;35m     GET[0m ([1;35m0.0788s[0m) / - [1;9m200[0m OK
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mTEMPLATE[0m ([1;33m0.0005s[0m) /home/indexs
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mTEMPLATE[0m ([1;33m0.0004s[0m) /layouts/application
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mSET CACHE[0m ([1;33m0.1459s[0m) /indexs
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;35m      GET[0m ([1;35m0.6358s[0m) /indexs - [1;9m200[0m OK
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mGET CACHE[0m ([1;33m0.1457s[0m) /indexs
+App 647 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;35m      GET[0m ([1;35m0.1482s[0m) /indexs - [1;9m200[0m OK
+
+[ 2014-11-28 23:09:12.5745 603/7effe4947700 agents/HelperAgent/Main.cpp:447 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 23:09:12.5753 603/7effe6768740 agents/HelperAgent/Main.cpp:804 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 23:09:12.5753 603/7effe6768740 agents/HelperAgent/Main.cpp:722 ]: Disconnecting long-running connections for process 647, application /home/action/myapp#default
+[ 2014-11-28 23:09:12.5754 603/7effdffff700 ServerKit/Server.h:453 ]: [ServerThr.2] Shutdown finished
+[ 2014-11-28 23:09:12.5758 603/7effdf7fe700 ServerKit/Server.h:453 ]: [AdminServer] Shutdown finished
+[ 2014-11-28 23:09:12.5761 603/7effe4947700 ServerKit/Server.h:892 ]: [Client 1.2] Disconnecting client with error: server is shutting down
+[ 2014-11-28 23:09:12.5762 603/7effe4947700 ServerKit/Server.h:453 ]: [ServerThr.1] Shutdown finished
+[ 2014-11-28 23:09:12.5767 603/7effe6768740 agents/HelperAgent/Main.cpp:722 ]: Disconnecting long-running connections for process 647, application /home/action/myapp#default
+
+[ 2014-11-28 23:09:12.5946 608/7f8be7945700 agents/LoggingAgent/Main.cpp:338 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 23:09:12.5947 608/7f8be8f65740 agents/LoggingAgent/Main.cpp:400 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 23:09:12.5948 608/7f8be7945700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
+[ 2014-11-28 23:09:12.5950 608/7f8be8f65740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished
+[ 2014-11-28 23:09:12.7125 603/7effe6768740 agents/HelperAgent/Main.cpp:866 ]: PassengerAgent server shutdown finished
+[ 2014-11-28 23:09:26.3185 925/7f699aa41740 agents/Watchdog/Main.cpp:1220 ]: Starting PassengerAgent watchdog...
+[ 2014-11-28 23:09:26.3318 928/7fc959951740 agents/HelperAgent/Main.cpp:881 ]: Starting PassengerAgent server...
+[ 2014-11-28 23:09:26.3323 928/7fc959951740 agents/HelperAgent/Main.cpp:254 ]: PassengerAgent server running in single-application mode.
+[ 2014-11-28 23:09:26.3323 928/7fc959951740 agents/HelperAgent/Main.cpp:255 ]: Serving app     : /home/action/myapp
+[ 2014-11-28 23:09:26.3323 928/7fc959951740 agents/HelperAgent/Main.cpp:256 ]: App type        : rack
+[ 2014-11-28 23:09:26.3323 928/7fc959951740 agents/HelperAgent/Main.cpp:257 ]: App startup file: config.ru
+[ 2014-11-28 23:09:26.3503 928/7fc959951740 agents/HelperAgent/Main.cpp:900 ]: ERROR: Cannot bind a TCP socket on address '0.0.0.0' port 3000: Address already in use (errno=98)
+     in 'int Passenger::createServer(const Passenger::StaticString&, unsigned int, bool)' (IOUtils.cpp:237)
+     in 'void startListening()' (Main.cpp:271)
+     in 'int runServer()' (Main.cpp:884)
+
+[ 2014-11-28 23:09:26.3516 926/7f699aa41740 agents/Watchdog/Main.cpp:1141 ]: ERROR: Unable to start the Phusion Passenger helper agent: it seems to have crashed during startup for an unknown reason, with exit code 1
+     in 'void startAgents(const Passenger::WatchdogAgent::WorkingObjectsPtr&, std::vector<boost::shared_ptr<AgentWatcher>, std::allocator<boost::shared_ptr<AgentWatcher> > >&)' (Main.cpp:1126)
+     in 'int watchdogMain(int, char**)' (Main.cpp:1260)
+
+[ 2014-11-28 23:09:27.3603 926/7f699aa41740 agents/Watchdog/Main.cpp:345 ]: Cannot open cleanup PID file /tmp/passenger-standalone.bm8u4w/temp_dir_toucher.pid
+[ 2014-11-28 23:10:30.0392 982/7fd3599cd740 agents/Watchdog/Main.cpp:1220 ]: Starting PassengerAgent watchdog...
+[ 2014-11-28 23:10:30.0534 985/7fa581983740 agents/HelperAgent/Main.cpp:881 ]: Starting PassengerAgent server...
+[ 2014-11-28 23:10:30.0536 985/7fa581983740 agents/HelperAgent/Main.cpp:254 ]: PassengerAgent server running in single-application mode.
+[ 2014-11-28 23:10:30.0537 985/7fa581983740 agents/HelperAgent/Main.cpp:255 ]: Serving app     : /home/action/myapp
+[ 2014-11-28 23:10:30.0537 985/7fa581983740 agents/HelperAgent/Main.cpp:256 ]: App type        : rack
+[ 2014-11-28 23:10:30.0537 985/7fa581983740 agents/HelperAgent/Main.cpp:257 ]: App startup file: config.ru
+[ 2014-11-28 23:10:30.0568 985/7fa581983740 agents/HelperAgent/Main.cpp:635 ]: PassengerAgent server online, PID 985
+[ 2014-11-28 23:10:30.0678 990/7f920d07d740 agents/LoggingAgent/Main.cpp:431 ]: Starting PassengerAgent logger...
+[ 2014-11-28 23:10:30.0690 990/7f920d07d740 agents/LoggingAgent/Main.cpp:312 ]: PassengerAgent logger online, PID 990
+App 1013 stdout: 
+App 1013 stderr: /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/system_metrics_command.rb:32:in `exec'
+App 1013 stderr: : 
+App 1013 stderr: No such file or directory - /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/buildout/support-binaries/PassengerAgent
+App 1013 stderr:  (
+App 1013 stderr: Errno::ENOENT
+App 1013 stderr: )
+App 1013 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/system_metrics_command.rb:32:in `run'
+App 1013 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/lib/phusion_passenger/config/main.rb:75:in `run!'
+App 1013 stderr: 	from /home/action/.rvm/gems/ruby-2.2.0-preview1@padrino/gems/passenger-5.0.0.beta1/bin/passenger-config:37:in `<main>'
+App 1029 stdout: 
+App 1029 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;33mGET CACHE[0m ([1;33m0.4473s[0m) /indexs
+App 1029 stdout: [0;36m  DEBUG[0m - [0;33m[0m [0;35m      GET[0m ([1;35m0.4660s[0m) /indexs - [1;9m200[0m OK
+
+[ 2014-11-28 23:14:32.5368 985/7fa57fb62700 agents/HelperAgent/Main.cpp:447 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 23:14:32.5369 985/7fa581983740 agents/HelperAgent/Main.cpp:804 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 23:14:32.5369 985/7fa581983740 agents/HelperAgent/Main.cpp:722 ]: Disconnecting long-running connections for process 1029, application /home/action/myapp#default
+[ 2014-11-28 23:14:32.5384 985/7fa57f361700 ServerKit/Server.h:453 ]: [ServerThr.2] Shutdown finished
+[ 2014-11-28 23:14:32.5385 985/7fa57eb60700 ServerKit/Server.h:453 ]: [AdminServer] Shutdown finished
+[ 2014-11-28 23:14:32.5386 985/7fa57fb62700 ServerKit/Server.h:453 ]: [ServerThr.1] Shutdown finished
+[ 2014-11-28 23:14:32.5387 985/7fa581983740 agents/HelperAgent/Main.cpp:722 ]: Disconnecting long-running connections for process 1029, application /home/action/myapp#default
+
+[ 2014-11-28 23:14:32.5550 990/7f920ba5d700 agents/LoggingAgent/Main.cpp:338 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2014-11-28 23:14:32.5551 990/7f920d07d740 agents/LoggingAgent/Main.cpp:400 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2014-11-28 23:14:32.5552 990/7f920ba5d700 ServerKit/Server.h:453 ]: [LoggerAdminServer] Shutdown finished
+[ 2014-11-28 23:14:32.5554 990/7f920d07d740 agents/LoggingAgent/Main.cpp:425 ]: PassengerAgent logger shutdown finished
+[ 2014-11-28 23:14:32.6669 985/7fa581983740 agents/HelperAgent/Main.cpp:866 ]: PassengerAgent server shutdown finished

@@ -21,14 +21,14 @@ Myapp::App.controllers :home do
   
   get :index, '/' do
     "Hello, Phusion Passenger #{PhusionPassenger::VERSION_STRING}!"
-    expires 36000
+    expires 28800
     etag Time.new.day
     render 'index'
   end
 
   get :indexs, '/indexs', cache: true do
     etag Time.new.day
-    expires 36000, :must_revalidate
+    expires 28800 #, :must_revalidate
     render 'indexs'
   end
 end

@@ -30,6 +30,7 @@ Padrino.configure_apps do
   set :session_secret, 'c7ee3982ebe6a3f48a620f805f744d71ed5024b5e3cc96d9bd4dd2e19690dbdf'
   set :protection, :except => :path_traversal
   set :protect_from_csrf, true
+  Sinatra::Logentries.token = '122245ee-7cfc-4f89-9eb3-8e05a392c632'
 end
 
 # Mounts the core application for this project

@@ -51,8 +51,8 @@ module Myapp
     #
     configure :production do
       enable :logging
-      GC::Profiler.enable
-      #Sinatra::Logentries.token = '122245ee-7cfc-4f89-9eb3-8e05a392c632'
+     #GC::Profiler.enable
+      Sinatra::Logentries.token = '122245ee-7cfc-4f89-9eb3-8e05a392c632'
     end
 
     ##

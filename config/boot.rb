@@ -6,7 +6,8 @@ PADRINO_ROOT = File.expand_path('../..', __FILE__) unless defined?(PADRINO_ROOT)
 require 'rubygems' unless defined?(Gem)
 require 'bundler/setup'
 Bundler.require(:default, RACK_ENV)
-
+require 'sinatra-logentries'
+Sinatra::Logentries.token = '55cbaf2f-1b47-4631-ae04-7661dd675303'
 ##
 # ## Enable devel logging
 #

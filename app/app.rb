@@ -50,6 +50,7 @@ module Myapp
     #   end
     #
     configure :production do
+      require 'sinatra-logentries'
       enable :logging
      #GC::Profiler.enable
       Sinatra::Logentries.token = '122245ee-7cfc-4f89-9eb3-8e05a392c632'

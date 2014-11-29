@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.0'
+ruby '2.1.5'
 # Distribute your app as a gem
 # gemspec
 # Server requirements
@@ -10,7 +10,7 @@ gem 'redis'
 group :production do
   gem 'newrelic_rpm'
   gem 'pg'
-  #gem 'sinatra-logentries'
+  gem 'sinatra-logentries'
   gem 'nokogiri'
 end
 # gem 'trinidad', :platform => 'jruby'

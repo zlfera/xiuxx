@@ -4,13 +4,13 @@ ruby '2.2.0'
 # gemspec
 # Server requirements
 #gem 'passenger', '>= 5.0.0.beta1'
-#gem 'puma'
+gem 'puma'
 gem 'redis'
 # gem 'activerecord'
 group :production do
   gem 'newrelic_rpm'
   gem 'pg'
-  gem 'sinatra-logentries'
+  #gem 'sinatra-logentries'
   gem 'nokogiri'
 end
 # gem 'trinidad', :platform => 'jruby'

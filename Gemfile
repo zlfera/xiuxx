@@ -10,6 +10,7 @@ gem 'redis'
 group :production do
   gem 'newrelic_rpm'
   gem 'pg'
+  gem 'sinatra-logentries'
   gem 'nokogiri'
 end
 # gem 'trinidad', :platform => 'jruby'

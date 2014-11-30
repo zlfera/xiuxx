@@ -27,8 +27,8 @@ Myapp::App.controllers :home do
   end
 
   get :indexs, '/indexs', cache: true do
-    etag Time.new.day
     expires 28800
+    etag Time.new.day
     render 'indexs'
   end
 end

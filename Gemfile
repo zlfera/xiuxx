@@ -15,7 +15,7 @@ group :production do
 end
 # gem 'trinidad', :platform => 'jruby'
 group :development do
-  gem 'padrino-gen', '>=0.12.2'
+  #gem 'padrino-gen', '>=0.12.2'
   gem 'sqlite3'
 end
 # Optional JSON codec (faster performance)
@@ -33,9 +33,9 @@ gem 'slim'
 # gem 'padrino', '>=0.12.2'
 
 # Or Padrino Edge
-# gem 'padrino', :github => 'padrino/padrino-framework'
+gem 'padrino', :github => 'padrino/padrino-framework'
 
 # Or Individual Gems
-%w(core support helpers cache).each do |g|
-  gem 'padrino-' + g, '>=0.12.2'
-end
+#%w(core support helpers cache).each do |g|
+ # gem 'padrino-' + g, '>=0.12.2'
+#end
